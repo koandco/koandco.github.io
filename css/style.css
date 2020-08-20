@@ -1,36 +1,17 @@
-/* =================================
-------------------------------------
-  Riddle - Portfolio
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
-
+@charset "UTF-8";
 /*----------------------------------------*/
 /* Template default CSS
 /*---------------------------------------*/
-
-html,
-body {
+html, body {
   height: 100%;
-  font-family: "Roboto",
-  Arial,
-  "ヒラギノ角ゴ W3 JIS2004",
-  "Hiragino Kaku Gothic ProN",
-  "Hiragino Sans",
-  Meiryo,
-  sans-serif;
+  font-family: "Roboto", Arial, "ヒラギノ角ゴ W3 JIS2004", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: #001418;
   margin: 0;
   font-weight: 600;
-  font-family: "Roboto", 'ヒラギノ角ゴ W3 JIS2004', sans-serif;
+  font-family: "Roboto", Arial, "ヒラギノ角ゴ W3 JIS2004", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 p {
@@ -43,21 +24,16 @@ img {
   max-width: 100%;
 }
 
-input:focus,
-select:focus,
-button:focus,
-textarea:focus {
+input:focus, select:focus, button:focus, textarea:focus {
   outline: none;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: none;
   outline: none;
 }
 
-ul,
-ol {
+ul, ol {
   padding: 0;
   margin: 0;
 }
@@ -131,15 +107,15 @@ ol {
 @keyframes loader {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -245,14 +221,14 @@ ol {
   background: transparent;
 }
 
+.accordion-area .panel-body {
+  padding: 0 5px;
+}
+
 .accordion-area .panel-body p {
   font-size: 14px;
   margin-bottom: 0;
   padding-top: 25px;
-}
-
-.accordion-area .panel-body {
-  padding: 0 5px;
 }
 
 .accordion-area .panel-link:after {
@@ -358,7 +334,7 @@ ol {
 /*------------------------
     Header Section
 --------------------------*/
-.header-section {
+.header {
   padding-top: 30px;
   padding-bottom: 20px;
   position: relative;
@@ -383,7 +359,7 @@ ol {
 .main-menu ul li a {
   display: inline-block;
   font-size: 18px;
-  font-family: ;
+  font-family: 'Roboto', sans-serif;
   color: #001418;
   margin-left: 15px;
   margin-right: 10px;
@@ -666,19 +642,7 @@ ol {
   font-size: 12px;
 }
 
-.contact-form ::-webkit-input-placeholder {
-  font-style: italic;
-}
-
-.contact-form :-ms-input-placeholder {
-  font-style: italic;
-}
-
-.contact-form ::-ms-input-placeholder {
-  font-style: italic;
-}
-
-.contact-form ::placeholder {
+.contact-form ::-webkit-input-placeholder, .contact-form :-ms-input-placeholder, .contact-form ::-ms-input-placeholder, .contact-form ::placeholder {
   font-style: italic;
 }
 
@@ -723,12 +687,12 @@ ol {
     padding-top: 15px;
     display: none;
   }
+  .main-menu ul li {
+    display: block;
+  }
   .main-menu ul li a {
     padding: 10px 15px;
     border-bottom: 1px solid #ddd;
-    display: block;
-  }
-  .main-menu ul li {
     display: block;
   }
   .main-menu ul li:last-child a {
